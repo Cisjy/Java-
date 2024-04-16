@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.station_springboot.mapper.TicketsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.station_springboot.entity.Tickets">
+        <id column="id" property="id" />
+        <result column="train_id" property="trainId" />
+        <result column="price" property="price" />
+        <result column="available_seats" property="availableSeats" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, train_id, price, available_seats
+    </sql>
+
+</mapper>
